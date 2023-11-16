@@ -65,8 +65,9 @@ public class Main{
             }     
         }
                //print highest rated application and rating in category
-            public static void max(Float Rating, String Category, Header App){
-                return;
+            public static void max(String App, Float Rating){
+                System.out.println("Highest");
+                return ;
             }
     
 
@@ -74,15 +75,18 @@ public class Main{
 
 
             //print lowest rated application and rating in category
-             public static void min(Float Rating, String Category, Header App){
+             public static void min(String App, Float Rating){
+                System.out.println("Lowest");
                 return;
             }
 
 
             //total number of applications for that category
             public static void collect (Header App){
-                System.out.println(Integer.parseInt(Header.getCategory()));
+                System.out.println("Count" + Integer.parseInt(Header.getCategory()));
             }
+
+            //number of discarded records for that category
             
              //display the total number of lines read from the CSV file
             public  static void linesread (BufferedReader br) throws IOException{
@@ -90,8 +94,8 @@ public class Main{
                      String str= br.readLine();
                      String[] columns = str.trim().split(",");
                     for( int i = 0;i < columns.length; i++){
-                        int wordCount = columns.length;
-                        System.out.println("Total word count: " + wordCount);
+                        int lines = columns.length;
+                        System.out.println("Total lines in file: " + lines);
                     }
                     
                     }
