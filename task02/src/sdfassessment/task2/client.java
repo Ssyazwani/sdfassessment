@@ -20,10 +20,12 @@ public class client {
          default:
             port = Integer.parseInt(args[0]);
       }
+      System.out.println("Connected");
+
        Socket socket = new Socket();
        Program prog = new Program(socket);
 
-      
+     
 
 
 

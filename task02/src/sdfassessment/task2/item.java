@@ -1,9 +1,8 @@
 package sdfassessment.task2;
 
-import java.security.SecureRandom;
+
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Random;
 
 public class item implements Comparator{
    private String request_id; 
@@ -24,8 +23,9 @@ public class item implements Comparator{
 
 public void weighing(int budget, int rating, int price) {
     Queue<Integer> queue = new LinkedList<>();
-    item obj1 = new item(rating, price);
-    item obj2 = new item(rating,price);
+    for (int i : queue){
+        item obj1 = new item(rating, price);
+        item obj2 = new item(rating,price);
      if (obj1.rating>obj2.rating){
         queue.offer(obj1.rating);
         queue.offer(obj2.rating);
@@ -36,13 +36,10 @@ public void weighing(int budget, int rating, int price) {
         queue.offer(obj2.rating);
         queue.offer(obj1.rating);
      }
-
-    
-
-
+    }
+  
     }
    
-
 
 public String getRequest_id() {
     return request_id;

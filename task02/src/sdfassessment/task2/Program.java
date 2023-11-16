@@ -35,6 +35,7 @@ public class Program {
             if (line.length() <= 0)
                continue;
             String[]lines = line.split("\n");
+            
             // item.getBudget();
             // item.getRating(), 
             // items.getPrice()

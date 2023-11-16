@@ -97,6 +97,7 @@ public class Main{
                         int lines = columns.length;
                         System.out.println("Total lines in file: " + lines);
                     }
+                    br.close();
                     
                     }
                 
