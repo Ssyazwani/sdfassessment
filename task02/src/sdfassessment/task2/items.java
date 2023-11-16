@@ -1,5 +1,5 @@
 package sdfassessment.task2;
 
-public class directives {
-    
+public enum items {
+
 }

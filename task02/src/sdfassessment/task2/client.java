@@ -23,7 +23,7 @@ public class client {
        Socket socket = new Socket();
        Program prog = new Program(socket);
 
-       prog.start();
+      
 
 
 

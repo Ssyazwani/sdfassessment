@@ -2,6 +2,7 @@ package sdfassessment.task2;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.Console;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
@@ -25,14 +26,30 @@ public class Program {
         BufferedWriter bw = new BufferedWriter(ows);
 
         boolean stop = false;
+        Console cons = System.console();
 
-        while(!stop){
+        while (!stop) {
+            String line = br.readLine();
+            int count = 1;
+            line = line.trim();
+            if (line.length() <= 0)
+               continue;
+            String[]lines = line.split("\n");
+            // item.getBudget();
+            // item.getRating(), 
+            // items.getPrice()
+            
+            
+
+
+         bw.write(line);
+         bw.flush();
+
             
         }
         
     }
 
-    public void start() {
-    }
+    
 
 }
