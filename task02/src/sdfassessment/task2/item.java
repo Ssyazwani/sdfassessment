@@ -22,7 +22,7 @@ public class item implements Comparator{
     this.item = item;
 }
 
-public void estimate(int budget, int rating, int price) {
+public void weighing(int budget, int rating, int price) {
     Queue<Integer> queue = new LinkedList<>();
     item obj1 = new item(rating, price);
     item obj2 = new item(rating,price);
