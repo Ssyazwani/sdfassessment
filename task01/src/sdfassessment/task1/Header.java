@@ -4,34 +4,44 @@ import java.util.ArrayList;
 import java.util.Locale.Category;
 
 public class Header {
-    private String Category;
-    public Header(String string, String string2) {
+    private static String Category;
+    private static String App;
+    private Float Rating;
+    
+    public Header(String Category, String App, float Rating) {
     }
-    public String getCategory() {
+    public static String getCategory() {
         return Category;
     }
     public  void setCategory(String category) {
     this.Category = Category;
     }
-    private String Rating;
-    public  String getRating() {
+    
+    public Float getRating() {
         return Rating;
     }
-    public  void setRating(String rating) {
+    public  void setRating(Float rating) {
         this.Rating = rating;
     }
-    private static String App;
-    public static String getApp() {
+   
+    public static  String getApp() {
         return App;
     }
     public  void setApp(String app) {
         this.App = app;
     }
 
-    public void Header (String Category, String Rating){
-        this.Rating= Rating;
-        this.Category= Category;
+    public static Float getAvg (Float Rating, String Category){
+        Float Avg = (Rating / (Integer.parseInt(Category)));
+        return Avg;
+
+    } 
+
+    public static void Cate (String App, String Category){
+        App = getApp();
+        Category = getCategory();
+
+    }
     }
     
-    
-}
+
